@@ -3,7 +3,7 @@ import {Client} from 'pg';
 require('dotenv').config();
 
 const config: Pool.Config<Client> = {
-    database : proccess.env.DB_DATABASE,
+    database : process.env.DB_DATABASE,
     port: Number(process.env.DB_PORT),
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
