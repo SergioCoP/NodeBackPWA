@@ -1,9 +1,14 @@
 import bodyParser from 'body-parser';
 import express from 'express';
 const cors = require('cors');
+import path from 'path'
 import { userRouter } from '../modules/user/adapters/user.controller';
 
+
 const app = express();
+
+app.use(express.static(path.join(__dirname,'../public')))
+
 app.use(
     cors({
         origin: '*'

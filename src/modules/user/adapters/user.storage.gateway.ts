@@ -1,6 +1,6 @@
 import { TUser } from "../entities/user";
 import { IUserRepository } from "../use-cases/ports/user.repository";
-import { pool } from 'config/postgress'
+import { pool } from '../../../config/postgress'
 
 //Como un DAO.
 export class UserStorageGateway implements IUserRepository{
