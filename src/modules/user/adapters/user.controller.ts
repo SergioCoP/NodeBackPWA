@@ -1,7 +1,7 @@
 import express,{Request, Response} from 'express'
 import { UserStorageGateway } from './user.storage.gateway';
 import { GetAllUsersInteractor } from '../use-cases/get-all-users.interactor';
-import { CreateUserInteractor } from '../use-cases/create-user.interactor';
+import { CreateUserInteractor } from '../use-cases/user-register.interactor';
 //Controller (Spring)
 export class UserController {
 
